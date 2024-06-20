@@ -1,6 +1,17 @@
 # UNET_explained
 We define our own UNET based on the original UNET article. It has way less layers, but the principle is the same.
 
+# Dataset
+
+MADS dataset is composed of 1192 images and their masks. We will use this dataset to train our UNET.
+https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-mads-dataset
+
+# Model Evaluation Methods
+
+After training, we will evaluate the performance of the UNET on:
+1. Inputs similar to MADS dataset
+2. Inputs not similar to MADS dataset
+
 
 # Learning Geometrical Features
 A UNET does this: 
@@ -20,3 +31,6 @@ The following images are outputs of the net without training at all.
 ## Trained Outputs
 
 ![alt text](https://i.ibb.co/5LpVtrs/Trained-Stimulus.png)
+
+# Future Works
+
