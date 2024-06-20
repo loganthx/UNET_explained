@@ -8,4 +8,4 @@ A UNET does this:
 2. Transpose2d and convolute without max pooling, decreasing the features and increasing the size until reaches the original image values. We have to apply connection between transpose2d layers and conv layers here, to make a so called decoder operation.
 
 ## What are the UNET inputs, labels and outputs, actually, in training:
-![alt text](https://ibb.co/cxW0Z3j)
+![alt text](https://freeimage.host/i/dHod1Fp)
