@@ -5,7 +5,6 @@ We define our own UNET based on the original UNET article. It has way less layer
 MADS dataset is composed of 1192 images and their masks. We will use this dataset to train our UNET.
 https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-mads-dataset
 
-![alt text](https://storage.googleapis.com/kaggle-datasets-images/1108926/1863359/1f5acd213e62270de4911d10e4f2d0ca/dataset-cover.png)
 
 # Model Evaluation Methods
 After training, we will evaluate the performance of the UNET on:
@@ -21,18 +20,18 @@ A UNET does this:
 2. Transpose2d and convolute without max pooling, decreasing the features and increasing the size until reaches the original image values. We have to apply connection between transpose2d layers and conv layers here, to make a so called decoder operation.
 
 ## UNET inputs, labels and outputs during training:
-![alt text](https://i.ibb.co/qxHKcjv/TRAINING-GRAPH-EPOCHS30.png)
+![](https://i.ibb.co/qxHKcjv/TRAINING-GRAPH-EPOCHS30.png)
 
 ## Untrained Outputs
 
 Considering the fact that a UNET is a good network for learning geomtric characteristics of images, we should expect that even without training, the net should output images that, in a sense, maps geometric features of the input. 
 The following images are outputs of the net without training at all.
 
-![alt text](https://i.ibb.co/TLFc4Gz/Untrained-Stimulus.png)
+![](https://i.ibb.co/TLFc4Gz/Untrained-Stimulus.png)
 
 ## Trained Outputs
 
-![alt text](https://i.ibb.co/5LpVtrs/Trained-Stimulus.png)
+![](https://i.ibb.co/5LpVtrs/Trained-Stimulus.png)
 
 # Future Works
 
