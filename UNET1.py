@@ -59,7 +59,6 @@ class UNET(nn.Module):
 
 		output_conv = self.final_conv(dec_conv3)
 
-
 		return output_conv
 			
 
