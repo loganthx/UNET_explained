@@ -2,23 +2,23 @@
 We define our own UNET based on the original UNET article. It has way less layers, but the principle is the same.
 
 # Dataset
-
 MADS dataset is composed of 1192 images and their masks. We will use this dataset to train our UNET.
 https://www.kaggle.com/datasets/tapakah68/segmentation-full-body-mads-dataset
 
 # Model Evaluation Methods
-
 After training, we will evaluate the performance of the UNET on:
 1. Inputs similar to MADS dataset
 2. Inputs not similar to MADS dataset
 
+# Training
+We trained our model for 100 epochs, using an Adam optimizer with a learning rate of 0.0001. For loss calculations, we selected the Mean Squared Error metric.
 
 # Learning Geometrical Features
 A UNET does this: 
 1. Convolution until reaches a maximum of features (called bottleneck) while also max pooling after every convolution (reducing the size of the image)
 2. Transpose2d and convolute without max pooling, decreasing the features and increasing the size until reaches the original image values. We have to apply connection between transpose2d layers and conv layers here, to make a so called decoder operation.
 
-## What are the UNET inputs, labels and outputs, actually, in training:
+## UNET inputs, labels and outputs during in training:
 ![alt text](https://i.ibb.co/qxHKcjv/TRAINING-GRAPH-EPOCHS30.png)
 
 ## Untrained Outputs
