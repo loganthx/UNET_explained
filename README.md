@@ -19,7 +19,8 @@ A UNET does this:
 1. Convolution until reaches a maximum of features (called bottleneck) while also max pooling after every convolution (reducing the size of the image)
 2. Transpose2d and convolute without max pooling, decreasing the features and increasing the size until reaches the original image values. We have to apply connection between transpose2d layers and conv layers here, to make a so called decoder operation.
 
-## UNET inputs, labels and outputs during training:
+## UNET inputs, labels and outputs during training
+
 ![](https://i.ibb.co/qxHKcjv/TRAINING-GRAPH-EPOCHS30.png)
 
 ## Untrained Outputs
@@ -29,9 +30,13 @@ The following images are outputs of the net without training at all.
 
 ![](https://i.ibb.co/TLFc4Gz/Untrained-Stimulus.png)
 
-## Trained Outputs
+## Trained Outputs on Images Non Similar to Dataset
 
 ![](https://i.ibb.co/5LpVtrs/Trained-Stimulus.png)
+
+## Trained Outputs on Images Similar to Dataset
+
+![](https://i.ibb.co/1Ty4PWj/Unettesttwosamples.png)
 
 # Future Works
 
