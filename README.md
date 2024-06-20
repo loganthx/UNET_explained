@@ -14,7 +14,7 @@ After training, we will evaluate the performance of the UNET on:
 # Training
 We trained our model for 100 epochs, using an Adam optimizer with a learning rate of 0.0001. For loss calculations, we selected the Mean Squared Error metric.
 
-![](https://i.ibb.co/xHqD1hN/Figure-1-log-100-epochs.png)
+![](https://i.ibb.co/H2HPrzF/Figure-2-log-100-epochs.png)
 
 # Learning Geometrical Features
 A UNET does this: 
