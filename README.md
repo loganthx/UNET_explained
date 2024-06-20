@@ -1,5 +1,5 @@
 # UNET_explained
-We define our own UNET based on the original UNET article. It has way less layers, but the principle is the same.
+We define our own UNET based on the original UNET article (source: https://arxiv.org/abs/1505.04597). It has way less layers, but the principle is the same.
 
 # Dataset
 MADS dataset is composed of 1192 images and their masks. We will use this dataset to train our UNET.
@@ -39,4 +39,5 @@ The following images are outputs of the net without training at all.
 ![](https://i.ibb.co/1Ty4PWj/Unettesttwosamples.png)
 
 # Future Works
-
+Our main goal, since the beggining of this study, is understanding why denoising diffusion is so good at creating samples with high variety, according to ddpm article.
+We seek to create a evaluation metric for this UNET in order to specify what is a reasonable minimum amount of layers in order to get a good result. With that in mind, we will define our own UNET also knowing that it will be a good UNET for denoising diffusion applications.
