@@ -14,6 +14,8 @@ After training, we will evaluate the performance of the UNET on:
 # Training
 We trained our model for 100 epochs, using an Adam optimizer with a learning rate of 0.0001. For loss calculations, we selected the Mean Squared Error metric.
 
+![](https://i.ibb.co/xHqD1hN/Figure-1-log-100-epochs.png)
+
 # Learning Geometrical Features
 A UNET does this: 
 1. Convolution until reaches a maximum of features (called bottleneck) while also max pooling after every convolution (reducing the size of the image)
