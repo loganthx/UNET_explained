@@ -1,5 +1,5 @@
 # UNET_explained
-We define our own UNET based on the original UNET article (source: https://arxiv.org/abs/1505.04597). It has way less layers, but the principle is the same.
+We define our own UNET based on the original UNET article (source: https://arxiv.org/abs/1505.04597). It has less convolution layers in comparison to the reference (9 layers instead of 23), but the principle is the same.
 
 # Dataset
 MADS dataset is composed of 1192 images and their masks. We will use this dataset to train our UNET.
