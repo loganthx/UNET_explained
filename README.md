@@ -27,7 +27,7 @@ A UNET does this:
 
 ## Untrained Outputs
 
-Considering the fact that a UNET is a good network for learning geomtric characteristics of images, we should expect that even without training, the net should output images that, in a sense, maps geometric features of the input. 
+Considering the fact that a UNET is a good network for learning geometric characteristics of images, we should expect that even without training, the net should output images that, in a sense, maps geometric features of the input. 
 The following images are outputs of the net without training at all.
 
 ![](https://i.ibb.co/TLFc4Gz/Untrained-Stimulus.png)
@@ -42,4 +42,4 @@ The following images are outputs of the net without training at all.
 
 # Future Works
 Our main goal, since the beggining of this study, is understanding why denoising diffusion is so good at creating samples with high variety, according to ddpm article.
-We seek to create a evaluation metric for this UNET in order to specify what is a reasonable minimum amount of layers in order to get a good result. With that in mind, we will define our own UNET also knowing that it will be a good UNET for denoising diffusion applications.
+We seek to create a evaluation metric for this UNET in order to specify what is a reasonable minimum amount of layers in order to get a good result for well known image segmentation tasks. With that in mind, we will evaluate our UNET knowing for sure that it will be a good UNET for denoising diffusion applications.
